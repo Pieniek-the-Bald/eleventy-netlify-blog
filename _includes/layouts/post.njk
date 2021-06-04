@@ -9,7 +9,7 @@ templateClass: tmpl-post
 {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
 <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
 {%- endfor %}
-
+<hr>
 {{ content | safe }}
 
 {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
