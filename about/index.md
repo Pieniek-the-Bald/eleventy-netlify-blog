@@ -7,4 +7,7 @@ eleventyNavigation:
   order: 3
 ---
 
-I am a person that writes stuff.
+
+I'm fresh Web Developer who just started the journey. If you'd like to see what I've done below is my GitHub page.
+
+<a href="https://github.com/Pieniek-the-Bald">GitHub</a>
