@@ -5,10 +5,28 @@ eleventyNavigation:
   order: 1
 ---
 {% set maxPosts = collections.posts.length | min(3) %}
-<h1>My {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Latest Posts{% endif %}</h1>
+<h2 class="ps-2">Below you can find my latest posts.</h2>
+
+{# I'm commenting out h2 below to save it in case I mess something up. #}
+{# <h2 class="ps-2">My {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Latest Posts{% endif %}</h2> #}
+<hr>
+
+<div class="container pt-2 position-absolute start-50">
+  <div class="card avatar-card text-center" style="width: 18rem;">
+  <img src="img/avatar.png" class="card-img-top" alt="...">
+  <div class="card-body">
+    
+    <a href="https://vigilant-mahavira-197e59.netlify.app/about/" class="btn btn-secondary text-white">About Me</a>
+  </div>
+</div>
+</div>
 
 {% set postslist = collections.posts | head(-3) %}
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
 
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+<p class="ps-2">More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+
+
+
+{# <img src="images/avatar.png" alt="avatar-image"> #}

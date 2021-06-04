@@ -53,6 +53,10 @@ header:after {
   display: table;
   clear: both;
 }
+footer {
+  padding-left: 45%;
+  padding-top: 50%;
+}
 table {
   margin: 1em 0;
 }
@@ -118,6 +122,10 @@ code {
 .highlight-line-remove {
   background-color: #902f2f;
 }
+.avatar-card {
+  background-color: #e0e0e0;
+  border: #e0e0e0;
+}
 
 /* Header */
 .home {
@@ -160,6 +168,7 @@ code {
   align-items: baseline;
   counter-increment: start-from -1;
   line-height: 1.8;
+  padding-left: 0.5rem;
 }
 .postlist-item:before {
   display: inline-block;
