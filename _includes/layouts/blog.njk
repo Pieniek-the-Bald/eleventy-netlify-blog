@@ -9,12 +9,13 @@ templateClass: tmpl-blog
 {%- set tagUrl %}/tags/{{ tag | slug }}/{% endset -%}
 <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
 {%- endfor %}
+Rating: {{ rating }}
+
 <hr>
+
+<img src="{{ thumbnail | url }}"/>
 {{ content | safe }}
 
-
-Rating: {{ rating }}
-<img src="{{ thumbnail | url }}"/>
 {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
 {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
 {%- if nextPost or previousPost %}

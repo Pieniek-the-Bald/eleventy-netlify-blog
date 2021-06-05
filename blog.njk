@@ -1,0 +1,16 @@
+---
+layout: layouts/home.njk
+permalink: /blog/
+eleventyNavigation:
+  key: Blog
+  order: Latest
+title: Blog list
+---
+
+<h1 class="ps-2">{{title}}</h1>
+
+{% for blogpost in collections.blog%}
+<p>
+    <a href="{{blogpost.url}}">{{blogpost.data.title}}</a>
+</p>
+{%endfor%}
