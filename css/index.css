@@ -92,6 +92,11 @@ pre {
 code {
   word-break: break-all;
 }
+.avatar-card {
+  background-color: #e0e0e0;
+  border: #e0e0e0;
+}
+
 .highlight-line {
   display: block;
   padding: 0.125em 1em;
@@ -122,10 +127,7 @@ code {
 .highlight-line-remove {
   background-color: #902f2f;
 }
-.avatar-card {
-  background-color: #e0e0e0;
-  border: #e0e0e0;
-}
+
 
 /* Header */
 .home {
