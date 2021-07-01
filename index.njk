@@ -11,14 +11,6 @@ eleventyNavigation:
 {# <h2 class="ps-2">My {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Latest Posts{% endif %}</h2> #}
 <hr>
 
-<div class="container pt-2 position-absolute start-50">
-  <div class="card avatar-card text-center" style="width: 18rem;">
-    <img src="img/avatar.png" class="card-img-top" alt="avatar-picture">
-    <div class="card-body">
-      <a href="https://vigilant-mahavira-197e59.netlify.app/about/" class="btn btn-secondary text-white">About Me</a>
-    </div>
-  </div>
-</div>
 
 {% set postslist = collections.blog | head(-3) %}
 {% set postslistCounter = collections.blog | length %}
@@ -26,6 +18,14 @@ eleventyNavigation:
 
 <p class="ps-2">More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
 
+<div class="container position-relative avatar-picture">
+  <div class="card avatar-card text-center" style="width: 18rem;">
+    <img src="/img/avatar.png" class="card-img-top" alt="avatar-picture">
+    <div class="card-body">
+      <a href="https://vigilant-mahavira-197e59.netlify.app/about/" class="btn btn-secondary text-white">About Me</a>
+    </div>
+</div>
+</div>
 
 
 {# <img src="images/avatar.png" alt="avatar-image"> #}
